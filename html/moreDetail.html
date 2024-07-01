@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        body {
+            /* background-color: #efedd6; */
+            background-image:;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .boxContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .boxContainer .box {
+            /* background-color: steelblue; */
+
+            color: rgb(66, 72, 97);/*字体颜色*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40vw;
+            height: 30vh;
+            margin: 10px;
+            font-size: 150%;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+            transform: translateX(400%);
+            transition: transform 0.4s ease;
+        }
+
+        .box:nth-of-type(even) {
+            transform: translateX(-400%);
+        }
+
+        .box.show {
+            transform: translateX(0);
+        }
+
+        .box h2 {
+            font-size: 45px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .boxContainer .box {
+                font-size: 1em;
+                height: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="../assets/music/index_bgm.mp3"></audio>
+    <div class="nav">
+        <a href="../index.html">
+            <div class="logo"
+                style="background-image: url('../img/小房子.png');">
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <!-- <li>茶叶品种</li>
+                                <li>品茶步骤</li>
+                                <li>茶文化</li>
+                                <li>更多资讯</li> -->
+
+            </ul>
+            <ul>
+                <a href="teaMakingStep.html">
+                    <li>鲁迅简介</li>
+                </a><a href="famousTea.html">
+                    <li>社戏品读</li>
+                </a><a href="famousTea.html">
+                    <li>思想感悟</li>
+                </a><a href="moreDetail.html">
+                    <li>知识回顾</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="boxContainer">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4
+            </p>
+        </div>
+        <div class="box">
+            <p>5
+            </p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+        <div class="box">
+            <p>7</p>
+        </div>
+        <div class="box">
+            <p>8</p>
+        </div>
+        <div class="box">
+            <p>9</p>
+        </div>
+
+    </div>
+    <script>
+        const boxes = document.querySelectorAll('.box')
+
+        window.addEventListener('scroll', checkBoxes)
+
+        checkBoxes()
+
+        function checkBoxes() {
+            const triggerBottom = window.innerHeight / 5 * 4
+
+            boxes.forEach(box => {
+                const boxTop = box.getBoundingClientRect().top
+
+                if (boxTop < triggerBottom) {
+                    box.classList.add('show')
+                } else {
+                    box.classList.remove('show')
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>

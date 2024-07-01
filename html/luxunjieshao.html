@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲁迅介绍</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <style>
+        html,body{
+        margin: 0;   
+        padding: 0;
+        }
+        /* ----------------------------------nav  */
+        .shell {
+            background-color:#ffffff;
+            width: 100xw;
+        }
+
+        .shell .img {
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+        }
+
+        .shell .img .text {
+            width: 80%;
+            font-size: 150%;
+            font-weight: bold;
+            margin: auto auto;
+            text-align: center;
+        }
+
+        .shell .gap {
+            height: 20vh;
+            background-color:#ffffff;
+            color: black;
+            line-height: 100px;
+            text-align: center;
+            /* display: flex; */
+        }
+
+
+        .jianotu-image1 {  
+        position: fixed; /* 或者使用 position: absolute; 如果不需要图片始终可见 */  
+        bottom: 0;  
+        right: 0;  
+         /* 如果你需要设置图片与右下角边缘的距离，可以添加以下属性 */  
+        margin-right: 10px;  
+        margin-bottom: 10px;  
+        /* 如果你需要设置图片的大小，可以添加以下属性 */  
+        width: 50px; /* 示例值，保持宽高比则设置height为auto */  
+        height: auto; /* 保持图片的原始宽高比 */  
+        z-index: 9999; /* 确保图片位于其他元素之上 */  
+        }
+
+        .gap .text {
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav .logo {
+                width: 50vw;
+                height: 50px;
+            }
+
+            .nav .menu {
+                width: 100%;
+                font-size: 1em;
+            }
+
+            .shell .gap {
+                height: 10vh;
+                /* font-size: 1em; */
+            }
+
+            .shell .gap .text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="../assets/music/index_bgm.mp3"></audio>
+    <div class="nav">
+        <a href="htmlluxunjianjie.html">
+            <div class="logo"
+                style="background-image: url('../img/小房子.png');">
+            </div>
+        </a>
+        <div class="menu">
+            <ul>
+                <!-- <li>鲁迅介绍</li>
+                <li>社戏品读</li>
+                <li>思想感悟</li>
+                <li>知识回顾</li> -->
+
+            </ul>
+            <ul>
+                <a href="">
+                    <li>鲁迅介绍</li>
+                </a><a href="">
+                    <li>社戏品读</li>
+                </a><a href="html/luxunjianjie.html">
+                    <li>思想感悟</li>
+                </a><a href="">
+                    <li>知识回顾</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="shell">
+        <div class="img"
+            style="background-image: url('../img/xiyan.jpg');">
+            <div class="text">
+                <font color="black" size="12" ><b>横眉冷对千夫指，俯首甘为孺子牛</b></font>  </div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>笔名</h1>
+            </div>
+        </div>
+        <div class="img"
+            style="background-image: url('../img/.jpg');">
+            <div class="text">
+                鲁迅原来名叫周树人，只有当他准备写文章时，才换上鲁迅这个名字<br/>
+</div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>童年时代</h1>
+            </div>
+        </div>
+        <div class="img"
+        style="background-image: url('../img/.jpg');">
+            <div class="text">
+                童年时代的鲁迅其实相当顽皮，他没事就在百草园斗斗蟋蟀，不然就是研究怎么捕鸟，再不然就是缠着祖母给他讲法海欺负许仙的故事。
+            </div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>人生转折</h1>
+            </div>
+        </div>
+        <div class="img"
+            style="background-image: url('../img/.jpg');">
+            <div class="text">
+                鲁迅13岁那年，祖父因官场失意被打进大牢，老爹一着急竟直接倒在床上成了重症病人，鲁迅家里y不久就落魄了，
+                家境的巨大转变让鲁迅收起了挂在脸上的笑容，也让他无奈的离开了家乡，踏上了外出求学之路，辗转的学起了医学</div>
+</div>
+
+
+
+
+<div class="gap">
+    <div class="text">
+        <h1>弃医从文</h1>
+    </div>
+</div>
+<div class="img"
+    style="background-image: url('../img/.jpg');">
+    <div class="text">
+        鲁迅学医时，日本跟俄国都想占领东北，而在中国发起了战争，这消息让鲁迅十分郁闷，<br/>
+        更让他生气的是，同学们对此毫不关心，照样该吃饭的吃饭，该打牌的打牌<br/>
+        鲁迅的小宇宙彻底爆发：面对敌人的入侵，你们怎么可以这么冷漠<br/>
+        这个世界让鲁迅毅然决然的弃医从文，把人们的冷漠展现在小说里<br/></div>
+</div>
+
+
+
+<div class="gap">
+    <div class="text">
+        <h1>时代影响</h1>
+    </div>
+</div>
+<div class="img"
+    style="background-image: url('../img/.jpg');">
+    <div class="text">
+         他的文学作品以其独特的思想精神、文艺技巧和风格，推进了中国文学的现代化和发展，<br/>
+        唤起了人民的思想觉醒和文化自觉，为当代中国的文艺和文化进步发展提供了源源不断的营养和动力。</div>
+</div>
+
+
+
+
+
+
+
+    
+        <div class="gap">
+            <div class="text">
+                <h1>人物评价</h1>
+            </div>
+        </div>
+        <div class="img"
+            style="background-image: url('../img/.jpg');">
+            <div class="text">
+            毛泽东：“鲁迅的骨头是最硬的，他没有丝毫的奴颜和媚骨。</br>
+            这是殖民地半殖民地人民最宝贵的性格。鲁迅是在文化战线上的民族英雄。”</br>
+            鲁迅是中国文化革命的主将，他不但是伟大的文学家，而且是伟大的思想家和伟大的革命家。
+</div>
+        </div>
+        <div class="gap">
+            <div class="text">
+                <h1>这世界上原本没有路，走的人多了，便成了路。</h1>
+            </div>
+        </div>
+
+
+    </div>
+    <img src="../img/jiantou.png" alt="右下角图片" class="jianotu-image1">
+</body>
+<script>
+    let audio = document.querySelector('audio');
+    audio.play();
+</script>
+
+</html>
